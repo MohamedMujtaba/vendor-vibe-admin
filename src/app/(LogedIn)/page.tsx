@@ -25,7 +25,7 @@ import { CalendarDateRangePicker } from "@/components/dashboardComponents/date-r
 import { Overview } from "@/components/dashboardComponents/overview";
 import { RecentSales } from "@/components/dashboardComponents/recent-sales";
 import StatusCard from "@/components/StatusCard";
-import OverviewTab from "@/components/OverviewTab";
+import OverviewTabs from "@/components/OverviewTabs";
 
 export const metadata: Metadata = {
   title: "Dashboard",
@@ -35,21 +35,17 @@ export const metadata: Metadata = {
 export default function DashboardPage() {
   return (
     <>
-      <div className="flex-col md:flex ">
-        <div className="flex-1 space-y-4 p-8 pt-6">
-          <div className="flex items-center justify-between space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
-            <div className="flex items-center space-x-2">
-              <CalendarDateRangePicker />
-              <Button size="sm">
-                <Download className="mr-2 h-4 w-4" />
-                Download
-              </Button>
-            </div>
-          </div>
-          <OverviewTab />
+      <div className="flex items-center justify-between space-y-2">
+        <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+        <div className="flex items-center space-x-2">
+          <CalendarDateRangePicker />
+          <Button size="sm">
+            <Download className="mr-2 h-4 w-4" />
+            Download
+          </Button>
         </div>
       </div>
+      <OverviewTabs />
     </>
   );
 }

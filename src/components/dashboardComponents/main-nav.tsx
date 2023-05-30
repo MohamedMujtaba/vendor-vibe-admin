@@ -18,6 +18,12 @@ export function MainNav({
         Overview
       </Link>
       <Link
+        href="/companies"
+        className="text-sm font-medium transition-colors hover:text-primary"
+      >
+        Companies
+      </Link>
+      <Link
         href="/customers"
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
@@ -28,6 +34,12 @@ export function MainNav({
         className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
       >
         Products
+      </Link>
+      <Link
+        href="/orders"
+        className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+      >
+        Orders
       </Link>
       <Link
         href="/settings"

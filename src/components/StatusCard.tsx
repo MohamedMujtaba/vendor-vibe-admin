@@ -7,10 +7,10 @@ interface StatusCardProps {
   title: string;
   content: string;
   des?: string;
-  Icon: React.JSXElementConstructor<i>;
+  Icon: React.JSXElementConstructor<T>;
 }
 
-interface i {
+interface T {
   className: string;
 }
 

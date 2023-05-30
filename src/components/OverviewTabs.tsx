@@ -12,7 +12,7 @@ import {
 import { RecentSales } from "./dashboardComponents/recent-sales";
 import { Overview } from "./dashboardComponents/overview";
 
-const OverviewTab = () => {
+const OverviewTabs = () => {
   return (
     <Tabs defaultValue="overview" className="space-y-4">
       <TabsList>
@@ -78,4 +78,4 @@ const OverviewTab = () => {
   );
 };
 
-export default OverviewTab;
+export default OverviewTabs;
